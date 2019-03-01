@@ -1,0 +1,38 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/sites.css' %}">
+    <title>login</title>
+</head>
+<body background="{% static 'media/background.png' %}">
+    <header>
+    </header>
+        <div class="login">
+                <form id="form" name="form" method="get" action="user">
+                        <div class="div-align-center">
+                            <a href=""><img src="{% static 'media/logo.png' %}" alt="Logo"></a>
+                        </div>
+                        <input aria-readonly="false" id="username" name="username" autocomplete="false" placeholder="Usuário" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all username-input ui-state-hover" type="text">
+
+                        <input id="password" name="password" class="ui-inputfield ui-password ui-widget ui-state-default ui-corner-all password-input" autocomplete="false" placeholder="Senha" type="password">
+
+                        <div class="div-align-center">
+
+                                <button id="buttonSubmit" name="buttonSubmit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="submit"><span class="ui-button-text ui-c">Acessar</span></button>
+                        </div>
+                        <br>
+                        <div>
+                            <button onclick="window.location.href='/senha.php'" id="buttonSenha" name="buttonSenha" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Esqueci a senha</span></button>
+
+                            <button onclick="window.location.href='/registrar.php'" id="buttonRegistrar" name="buttonRegistrar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Criar conta</span></button>
+                        </div>
+                        <div>
+                            <a href="http://localhost:8000">voltar</a>
+                        </div>
+                </form>
+        </div>
+    <footer>
+    </footer>
+</body>
+</html>
